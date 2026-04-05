@@ -1,8 +1,8 @@
 /* ==UserStyle==
-@name           Hide Address on Amazon for OBS
+@name           Hide Address on Amazon for OBS (Firefox)
 @description    Hide private address, recipient name, and order history address fields on Amazon before Window Capture
 @namespace      github.com/yuki-yano/obs-stream-amazon
-@version        0.1.1
+@version        0.2.0
 ==/UserStyle== */
 
 @-moz-document domain("amazon.co.jp"), domain("amazon.com") {

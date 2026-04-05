@@ -3,4 +3,4 @@
 set -euo pipefail
 
 repo_root="$(cd "$(dirname "$0")/.." && pwd)"
-cat "$repo_root/templates/stylus-hide-address.user.css"
+cat "$repo_root/templates/chrome-hide-address.css"
