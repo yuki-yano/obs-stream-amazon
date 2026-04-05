@@ -1,8 +1,8 @@
 /* ==UserStyle==
 @name           Hide Address on Amazon for OBS
-@description    Hide private address fields on Amazon before Window Capture
+@description    Hide private address, recipient name, and order history address fields on Amazon before Window Capture
 @namespace      github.com/yuki-yano/obs-stream-amazon
-@version        0.1.0
+@version        0.1.1
 ==/UserStyle== */
 
 @-moz-document domain("amazon.co.jp"), domain("amazon.com") {
@@ -20,11 +20,32 @@
   #nav-link-accountList-nav-line-1,
   [data-csa-c-content-id="nav_cs_ship_to"],
   [data-testid="address-selector"],
+  [data-component="shippingAddress"],
+  [data-component="deliveryAddress"],
   [aria-label*="deliver to" i],
   [aria-label*="ship to" i],
   [aria-label*="delivery address" i],
   [aria-label*="お届け先" i],
-  [aria-label*="配送先" i] {
+  [aria-label*="配送先" i],
+  .yohtmlc-recipient,
+  .displayAddressDiv,
+  .displayAddressUL,
+  .displayAddressLI,
+  .displayAddressFullName,
+  .displayAddressAddressLine1,
+  .displayAddressAddressLine2,
+  .displayAddressCityStateOrRegionPostalCode,
+  .displayAddressCountryName,
+  [class*="displayAddress"],
+  [id*="displayAddress"],
+  [class*="recipient"],
+  [id*="recipient"],
+  [class*="shippingAddress"],
+  [id*="shippingAddress"],
+  [class*="deliveryAddress"],
+  [id*="deliveryAddress"],
+  [class*="ship-to"],
+  [id*="ship-to"] {
     display: none !important;
     visibility: hidden !important;
   }
