@@ -19,6 +19,7 @@
 [data-testid="address-selector"],
 [data-component="shippingAddress"],
 [data-component="deliveryAddress"],
+[data-component="viewPaymentPlanSummaryWidget"],
 [aria-label*="deliver to" i],
 [aria-label*="ship to" i],
 [aria-label*="delivery address" i],
@@ -41,6 +42,10 @@
 [id*="shippingAddress"],
 [class*="deliveryAddress"],
 [id*="deliveryAddress"],
+[data-testid="payment-instrument"],
+[data-testid="payment-instrument-name"],
+[data-testid="payment-instrument-prefix"],
+[data-testid="payment-instrument-number"],
 [class*="ship-to"],
 [id*="ship-to"] {
   display: none !important;
