@@ -1,0 +1,39 @@
+/* ==UserStyle==
+@name           Hide Address on Amazon for OBS
+@description    Hide private address fields on Amazon before Window Capture
+@namespace      github.com/yuki-yano/obs-stream-amazon
+@version        0.1.0
+==/UserStyle== */
+
+@-moz-document domain("amazon.co.jp"), domain("amazon.com") {
+  #nav-global-location-slot,
+  #glow-ingress-block,
+  #glow-ingress-line1,
+  #glow-ingress-line2,
+  #nav-packard-glow-loc-icon,
+  #contextualIngressPt,
+  #contextualIngressPtLabel,
+  #contextualIngressPtLabel_deliveryShortLine,
+  #contextualIngressPtPin,
+  #contextualIngressPt_feature_div,
+  #nav-link-accountList .nav-line-1,
+  #nav-link-accountList-nav-line-1,
+  [data-csa-c-content-id="nav_cs_ship_to"],
+  [data-testid="address-selector"],
+  [aria-label*="deliver to" i],
+  [aria-label*="ship to" i],
+  [aria-label*="delivery address" i],
+  [aria-label*="お届け先" i],
+  [aria-label*="配送先" i] {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  [class*="location"],
+  [id*="location"],
+  [class*="address"],
+  [id*="address"] {
+    max-height: 0 !important;
+    overflow: hidden !important;
+  }
+}
