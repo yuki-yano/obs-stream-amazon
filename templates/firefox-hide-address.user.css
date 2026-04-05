@@ -49,12 +49,4 @@
     display: none !important;
     visibility: hidden !important;
   }
-
-  [class*="location"],
-  [id*="location"],
-  [class*="address"],
-  [id*="address"] {
-    max-height: 0 !important;
-    overflow: hidden !important;
-  }
 }
